@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HelpController">
+   <children>
+      <ImageView blendMode="MULTIPLY" depthTest="DISABLE" disable="true" fitHeight="450.0" fitWidth="701.0" focusTraversable="true" opacity="0.39" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@maxresdefault.jpg" />
+         </image>
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </ImageView>
+      <Label blendMode="SRC_ATOP" layoutX="27.0" layoutY="41.0" prefHeight="41.0" prefWidth="167.0" text="Instruction:" textFill="#320fab">
+         <font>
+            <Font name="Cooper Black" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="89.0" prefHeight="61.0" prefWidth="664.0" text="1.To see the scoreboard of a match, see the match code of that match" textFill="#252424">
+         <font>
+            <Font name="Chiller" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="169.0" prefHeight="41.0" prefWidth="664.0" text="2.Then enter the match code and see the score" textFill="#252424">
+         <font>
+            <Font name="Chiller" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="242.0" prefHeight="41.0" prefWidth="664.0" text="3.If you want to see the updated score ,press the refresh button" textFill="#252424">
+         <font>
+            <Font name="Chiller" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="306.0" prefHeight="41.0" prefWidth="664.0" text="4.Only Admin can log in and Update the Score" textFill="#252424">
+         <font>
+            <Font name="Chiller" size="33.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="587.0" layoutY="33.0" mnemonicParsing="false" onAction="#backAction" prefHeight="29.0" prefWidth="79.0" text="Back">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

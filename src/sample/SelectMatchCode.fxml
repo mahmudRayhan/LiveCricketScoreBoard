@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SelectMatchCodeController">
+   <children>
+      <ImageView fitHeight="450.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@SelectMatc.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="matchType" layoutX="235.0" layoutY="24.0" prefHeight="102.0" prefWidth="239.0" text="Select Match" textAlignment="CENTER" textFill="#23701d" textOverrun="CLIP">
+         <font>
+            <Font name="Freestyle Script" size="60.0" />
+         </font>
+      </Label>
+      <Button fx:id="returnToHomePage" layoutX="532.0" layoutY="406.0" mnemonicParsing="false" onAction="#returnToHomePageAction" prefHeight="30.0" prefWidth="154.0" style="-fx-background-color: #acdee0;" text="Return to Home Page" textFill="#252423">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font></Button>
+      <ComboBox fx:id="selectMatch" layoutX="181.0" layoutY="186.0" onAction="#selectMatchAction" prefHeight="39.0" prefWidth="347.0" promptText="Select Match to See Score" style="-fx-background-color: #acdee0;" />
+      <Button fx:id="seeScore" layoutX="397.0" layoutY="246.0" mnemonicParsing="false" onAction="#seeScoreAction" prefHeight="19.0" prefWidth="131.0" style="-fx-background-color: #acdee0;" text="See ScoreBoard" textFill="#252423">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

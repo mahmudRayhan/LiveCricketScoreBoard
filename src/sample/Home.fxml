@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomePageController">
+   <children>
+      <ImageView fitHeight="450.0" fitWidth="701.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Homepage.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="internationalMatch" layoutX="26.0" layoutY="201.0" mnemonicParsing="false" onAction="#internationalMatchAction" opacity="0.8" prefHeight="39.0" prefWidth="150.0" style="-fx-background-color: #65d00e;" text="Live Scores" textAlignment="CENTER">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Button fx:id="adminLogin" alignment="TOP_CENTER" layoutX="26.0" layoutY="153.0" mnemonicParsing="false" onAction="#adminLoginAction" opacity="0.8" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #65d00e;" text="Admin Login" textAlignment="CENTER" textFill="#252625">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Label layoutX="139.0" layoutY="1.0" prefHeight="61.0" prefWidth="448.0" text="Live Cricket Scoreboard" textFill="#51576f" textOverrun="CLIP">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Label>
+      <Button fx:id="help" layoutX="26.0" layoutY="251.0" mnemonicParsing="false" onAction="#helpAction" opacity="0.8" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #65d00e;" text="Help">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="about" layoutX="26.0" layoutY="297.0" mnemonicParsing="false" onAction="#aboutAction" opacity="0.8" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #65d00e;" text="About">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UpdateScoreController">
+   <children>
+      <ImageView fitHeight="607.0" fitWidth="999.0" layoutX="-10.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@update.jpg" />
+         </image>
+         <effect>
+            <BoxBlur />
+         </effect>
+      </ImageView>
+      <Label layoutX="236.0" layoutY="8.0" prefHeight="45.0" prefWidth="324.0" text="Update Scoreboard" textFill="#1d286e" textOverrun="CLIP">
+         <font>
+            <Font name="Broadway" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="247.0" prefHeight="23.0" prefWidth="43.0" text="Run :" textFill="#2a2236">
+         <font>
+            <Font name="Cooper Black" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="281.0" prefHeight="23.0" prefWidth="68.0" text="Wicket :" textFill="#2a2236">
+         <font>
+            <Font name="Cooper Black" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="320.0" prefHeight="23.0" prefWidth="53.0" text="Over :" textFill="#2a2236">
+         <font>
+            <Font name="Cooper Black" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="109.0" prefHeight="23.0" prefWidth="61.0" text="Match :" textFill="#2a2236">
+         <font>
+            <Font name="Cooper Black" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="logOut" layoutX="745.0" layoutY="14.0" mnemonicParsing="false" onAction="#logOutAction" prefHeight="23.0" prefWidth="82.0" text="Log Out" textFill="#3ab23a">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="update" layoutX="747.0" layoutY="555.0" mnemonicParsing="false" onAction="#updateAction" prefHeight="23.0" prefWidth="89.0" text="Update" textFill="#62c38c">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="team1_run" layoutX="102.0" layoutY="244.0" prefHeight="23.0" prefWidth="82.0">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <TextField fx:id="team1_wicket" layoutX="104.0" layoutY="278.0" prefHeight="11.0" prefWidth="43.0">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <TextField fx:id="team1_over" layoutX="103.0" layoutY="314.0" prefHeight="16.0" prefWidth="61.0">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <TextField fx:id="matchName" layoutX="111.0" layoutY="107.0" prefHeight="29.0" prefWidth="388.0">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <TextField fx:id="team1" layoutX="17.0" layoutY="203.0" prefHeight="29.0" prefWidth="298.0">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <Button fx:id="selectMatch" layoutX="701.0" layoutY="55.0" mnemonicParsing="false" onAction="#selectMatchAction" prefHeight="29.0" prefWidth="126.0" text="Select Match" textFill="#62c38c">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="4.0" layoutY="72.0" prefHeight="23.0" prefWidth="97.0" text="Match Code :" textFill="#2a2236">
+         <font>
+            <Font name="Cooper Black" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="matchCode" layoutX="109.0" layoutY="71.0" prefHeight="23.0" prefWidth="68.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="495.0" layoutY="252.0" prefHeight="23.0" prefWidth="43.0" text="Run :" textFill="#2a2236">
+         <font>
+            <Font name="Cooper Black" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="476.0" layoutY="286.0" prefHeight="23.0" prefWidth="68.0" text="Wicket :" textFill="#2a2236">
+         <font>
+            <Font name="Cooper Black" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="487.0" layoutY="325.0" prefHeight="23.0" prefWidth="53.0" text="Over :" textFill="#2a2236">
+         <font>
+            <Font name="Cooper Black" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="team2_run" layoutX="561.0" layoutY="249.0" prefHeight="23.0" prefWidth="82.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="team2_wicket" layoutX="561.0" layoutY="283.0" prefHeight="11.0" prefWidth="43.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="team2_over" layoutX="562.0" layoutY="319.0" prefHeight="16.0" prefWidth="61.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="team2" layoutX="476.0" layoutY="208.0" prefHeight="29.0" prefWidth="298.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="55.0" layoutY="144.0" prefHeight="23.0" prefWidth="43.0" text="Toss :" textFill="#2a2236">
+         <font>
+            <Font name="Cooper Black" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="toss" layoutX="111.0" layoutY="142.0" prefHeight="29.0" prefWidth="573.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="112.0" layoutY="365.0" prefHeight="23.0" prefWidth="153.0" text="Current Batsman:" textFill="#2a2236">
+         <font>
+            <Font name="Cooper Black" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="batsman1" layoutX="231.0" layoutY="396.0" prefHeight="29.0" prefWidth="89.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="batsman1_run" layoutX="353.0" layoutY="396.0" prefHeight="29.0" prefWidth="43.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="415.0" layoutY="399.0" prefHeight="23.0" prefWidth="43.0" text="From" textFill="#bf7d89">
+         <font>
+            <Font name="Cooper Black" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="batsman1_ball" layoutX="465.0" layoutY="396.0" prefHeight="29.0" prefWidth="43.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="528.0" layoutY="399.0" prefHeight="23.0" prefWidth="43.0" text="Ball" textFill="#2a2236">
+         <font>
+            <Font name="Cooper Black" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="batsman2" layoutX="232.0" layoutY="433.0" prefHeight="29.0" prefWidth="89.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="batsman2_run" layoutX="354.0" layoutY="433.0" prefHeight="29.0" prefWidth="43.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="416.0" layoutY="436.0" prefHeight="23.0" prefWidth="43.0" text="From" textFill="#bf7d89">
+         <font>
+            <Font name="Cooper Black" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="batsman2_ball" layoutX="466.0" layoutY="433.0" prefHeight="29.0" prefWidth="43.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="529.0" layoutY="436.0" prefHeight="23.0" prefWidth="43.0" text="Ball" textFill="#2a2236">
+         <font>
+            <Font name="Cooper Black" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="124.0" layoutY="480.0" prefHeight="23.0" prefWidth="126.0" text="Current Over:" textFill="#2a2236">
+         <font>
+            <Font name="Cooper Black" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bowler" layoutX="231.0" layoutY="515.0" prefHeight="29.0" prefWidth="89.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="ball_1" layoutX="347.0" layoutY="515.0" prefHeight="29.0" prefWidth="43.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="ball_2" layoutX="396.0" layoutY="515.0" prefHeight="29.0" prefWidth="43.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="ball_6" layoutX="597.0" layoutY="515.0" prefHeight="29.0" prefWidth="43.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="ball_3" layoutX="446.0" layoutY="515.0" prefHeight="29.0" prefWidth="43.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="ball_5" layoutX="546.0" layoutY="515.0" prefHeight="29.0" prefWidth="43.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="ball_4" layoutX="498.0" layoutY="515.0" prefHeight="29.0" prefWidth="43.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="21.0" layoutY="559.0" prefHeight="23.0" prefWidth="61.0" text="Result:" textFill="#2a2236">
+         <font>
+            <Font name="Cooper Black" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="target" layoutX="93.0" layoutY="556.0" prefHeight="29.0" prefWidth="629.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="editPlayerInfoButton" layoutX="694.0" layoutY="511.0" mnemonicParsing="false" onAction="#editPlayerInfoButtonClicked" prefHeight="16.0" prefWidth="141.0" text="Edit Player Info" textFill="#62c38c">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

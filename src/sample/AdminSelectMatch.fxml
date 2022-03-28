@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminSelectMatchController">
+   <children>
+      <ImageView fitHeight="450.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@AdminSelectMatch.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="167.0" layoutY="28.0" prefHeight="57.0" prefWidth="357.0" text="Select Match To Update" textFill="#0b4005" textOverrun="CLIP">
+         <font>
+            <Font name="Eras Bold ITC" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="logOut" layoutX="597.0" layoutY="33.0" mnemonicParsing="false" onAction="#logOutAction" prefHeight="31.0" prefWidth="77.0" text="Log Out">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="selectMatch" layoutX="177.0" layoutY="214.0" onAction="#selectMatchAction" prefHeight="39.0" prefWidth="347.0" promptText="Select Match to Update Score" />
+      <Button fx:id="seeScore" layoutX="393.0" layoutY="275.0" mnemonicParsing="false" onAction="#seeScoreAction" prefHeight="19.0" prefWidth="131.0" text="See ScoreBoard" textFill="#252423">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="77.0" fitWidth="87.0" layoutX="68.0" layoutY="341.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/admin.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BowlerWindowController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/Stadium.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="bowlersTable" layoutX="143.0" layoutY="101.0" prefHeight="330.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="bowlerColumn" prefWidth="322.0" text="Bowlers" />
+          <TableColumn fx:id="oversColumn" minWidth="0.0" prefWidth="78.0" text="Overs" />
+            <TableColumn fx:id="wicketsColumn" prefWidth="97.0" text="Wickets" />
+            <TableColumn fx:id="runsColumn" prefWidth="102.0" text="Runs" />
+        </columns>
+      </TableView>
+      <HBox fx:id="hBox" layoutX="285.0" layoutY="14.0" prefHeight="70.0" prefWidth="337.0">
+         <children>
+            <ImageView fx:id="coutryIcon" fitHeight="59.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="countryName" prefHeight="60.0" prefWidth="215.0" text="Bowling Team" textFill="#008a27">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Button fx:id="backButton" cancelButton="true" layoutX="58.0" layoutY="101.0" mnemonicParsing="false" onAction="#backButtonClicked" text="Back" />
+      <ImageView fitHeight="70.0" fitWidth="92.0" layoutX="197.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/ball.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="32.0" layoutX="33.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/back%20(1).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

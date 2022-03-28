@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AlertBoxController">
+   <children>
+      <Label fx:id="label" layoutX="51.0" layoutY="82.0" prefHeight="36.0" prefWidth="199.0" text="Label" wrapText="true" />
+      <Button fx:id="okayButton" cancelButton="true" layoutX="129.0" layoutY="141.0" mnemonicParsing="false" onAction="#okayButtonClicked" text="Okay" />
+      <ImageView fitHeight="51.0" fitWidth="54.0" layoutX="125.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/warning.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

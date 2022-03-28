@@ -1,0 +1,4 @@
+Sakib Al Hasan,52,60,not out
+Tamim Iqbal,32,16,c Johnson
+Mushfiqur Rahim,78,85,b Starc
+101,20,10,10
